@@ -23,6 +23,12 @@ namespace TestApp
         public MainWindow()
         {
             InitializeComponent();
+
+            List<int> intData = new List<int>();
+            intData.Add(2);
+            //intData.Add(5);
+
+            DataHandler.SetUp(intData);
         }
     }
 }
