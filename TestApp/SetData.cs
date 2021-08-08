@@ -15,6 +15,7 @@ namespace TestApp
             if(!IsValid(intData))
             {
                 OnDataNotValid();
+
             }
 
             CalcData(intData[0], intData[1]);
