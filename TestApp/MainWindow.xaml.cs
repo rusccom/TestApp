@@ -24,11 +24,22 @@ namespace TestApp
         {
             InitializeComponent();
 
+
             List<int> intData = new List<int>();
             intData.Add(2);
-            //intData.Add(5);
+            intData.Add(5);
 
             DataHandler.SetUp(intData);
+        }
+
+        private void acceptButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Кнопка нажата");
+        }
+
+        private void userText_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
