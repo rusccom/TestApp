@@ -35,6 +35,16 @@ namespace TestApp
         private void acceptButton_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Кнопка нажата");
+
+            DataGridTextColumn colName = new DataGridTextColumn();
+            colName.Header = "Name";
+            colName.Width = 150;
+
+            DataGridTextColumn colVal = new DataGridTextColumn();
+            colVal.Header = "Value";
+
+            UserGrid.Columns.Add(colName);
+            UserGrid.Columns.Add(colVal);
         }
 
         private void userText_TextChanged(object sender, TextChangedEventArgs e)

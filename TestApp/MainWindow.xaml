@@ -10,7 +10,9 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="0.10*"></RowDefinition>
             <RowDefinition Height="0.20*"></RowDefinition>
-            <RowDefinition Height="0.70*"></RowDefinition>
+            <RowDefinition Height="0.05*"></RowDefinition>
+            <RowDefinition Height="0.55*"></RowDefinition>
+            <RowDefinition Height="0.10*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.05*"></ColumnDefinition>
@@ -21,5 +23,8 @@
         </Grid.ColumnDefinitions>
         <Button x:Name="acceptButton" Grid.Column="1" Grid.Row="1" Content="ОК" Click="acceptButton_Click" />
         <TextBox x:Name="userText" Grid.Row="1" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="250" TextChanged="userText_TextChanged"></TextBox>
+        <DataGrid x:Name="UserGrid" Grid.Row="3" Grid.Column="3">
+ 
+        </DataGrid>
     </Grid>
 </Window>
